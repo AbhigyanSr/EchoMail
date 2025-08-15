@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.0",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2025-08-15T12:00:00.000Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "EXAMPLE"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "1.2.3.4"
+      },
+      "responseElements": {
+        "x-amz-request-id": "EXAMPLE123456789",
+        "x-amz-id-2": "EXAMPLE123456789/abcdefghijKLMNOPQRstuVWxyz0123456789abcdefghij"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "example-config-id",
+        "bucket": {
+          "name": "echomail-csv",
+          "ownerIdentity": {
+            "principalId": "EXAMPLE"
+          },
+          "arn": "arn:aws:s3:::echomail-csv"
+        },
+        "object": {
+          "key": "your-file.csv",
+          "size": 1234,
+          "eTag": "abcdef1234567890",
+          "sequencer": "abcdef1234567890"
+        }
+      }
+    }
+  ]
+}
